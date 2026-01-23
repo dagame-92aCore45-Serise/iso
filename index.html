@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Student Name</title>
+  </head>
+  <body>
+    <div class="cover">
+      <!-- header -->
+      <div class="header">
+        <h2>ព្រះរាជាណាចក្រកម្ពុជា <br />ជាតិ​ សាសនាព្រះមហាក្សត្រ</h2>
+      </div>
+      <button class="btnPrint" onclick="printTable()">
+        <i class="fa-solid fa-print"></i> Print
+      </button>
+      <div class="container">
+        <form class="contant" id="formsubmit">
+          <div class="txtInput">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <!-- form -->
+            <label class="Ntxt"
+              >Student Name:
+              <input
+                id="Ntxt"
+                type="text"
+                placeholder="Student Name"
+                required /></label
+            ><br />
+            <br />
+            <div class="score">
+              <label class="charp"
+                >C#:
+                <input
+                  type="number"
+                  name="score"
+                  id="c#"
+                  placeholder="0 to 100"
+                  required
+              /></label>
+              <br />
+              <br />
+              <label class="java"
+                >Java:
+                <input
+                  type="number"
+                  name="score"
+                  id="java"
+                  placeholder="0 to 100"
+                  required
+              /></label>
+              <br />
+              <br />
+              <label class="gd"
+                >GD:
+                <input
+                  type="number"
+                  name="score"
+                  id="gd"
+                  placeholder="0 to 100"
+                  required
+              /></label>
+              <br />
+              <br />
+              <label class="ux"
+                >UX/UI:
+                <input
+                  type="number"
+                  name="score"
+                  id="ux"
+                  placeholder="0 to 100"
+                  required
+              /></label>
+              <br />
+              <br />
+              <label class="dsa"
+                >DSA:
+                <input
+                  type="number"
+                  name="score"
+                  id="dsa"
+                  placeholder="0 to 100"
+                  required
+              /></label>
+            </div>
+            <div class="gender">
+              <label>Gender: </label>
+              <label for="male" class="male"
+                ><input
+                  id="male"
+                  type="radio"
+                  name="Gender"
+                  value="male" />Male</label
+              >
+              <label for="female" class="male"
+                ><input
+                  id="female"
+                  type="radio"
+                  name="Gender"
+                  value="female" />Female</label
+              >
+            </div>
+            <label class="date">
+              Date Of Birthday:
+              <input type="date" name="date" id="date" required
+            /></label>
+            <br />
+            <br />
+            <label class="btnEnter"
+              ><input type="submit" name="submit" id="btnEnter" value="Enter"
+            /></label>
+            <label class="btnclear"
+              ><input type="reset" name="reset" id="btnClear" value="Clear"
+            /></label>
+            <img class="imge" src="image.png" alt="image" />
+          </div>
+        </form>
+      </div>
+      <br /><br />
+      <br />
+      <div class="border">
+        <table id="table">
+          <tr>
+            <th>Id</th>
+            <th>Students Name</th>
+            <th>Gender</th>
+            <th>C#</th>
+            <th>Java</th>
+            <th>Gd</th>
+            <th>UX/UI</th>
+            <th>DSA</th>
+            <th>Total Score</th>
+            <th>Average</th>
+            <th>Rank</th>
+            <th>Date Of Birthday</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
